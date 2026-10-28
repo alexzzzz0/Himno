@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juegos · Estudio Cívico del Himno de Honduras</title>
+  <link rel="stylesheet" href="styles.css">
+  <script>try{var t=JSON.parse(localStorage.getItem("hn:theme"));if(!t&&matchMedia("(prefers-color-scheme: dark)").matches)t="dark";if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+  <header id="site-header"></header>
+  <main class="container"><div id="views"></div><div style="height:40px"></div></main>
+  <footer id="site-footer"></footer>
+  <script src="questions.js"></script>
+  <script src="js/core.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/quiz-engine.js"></script>
+  <script src="js/mode-practice.js"></script>
+  <script src="js/mode-match.js"></script>
+  <script src="js/mode-vf.js"></script>
+  <script>Layout.render("juegos.html", "Juegos", "Practica de forma entretenida con respuesta inmediata."); App.page(["practice","match","vf"]);</script>
+</body>
+</html>

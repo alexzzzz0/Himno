@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estudio · Estudio Cívico del Himno de Honduras</title>
+  <link rel="stylesheet" href="styles.css">
+  <script>try{var t=JSON.parse(localStorage.getItem("hn:theme"));if(!t&&matchMedia("(prefers-color-scheme: dark)").matches)t="dark";if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+  <header id="site-header"></header>
+  <main class="container"><div id="views"></div><div style="height:40px"></div></main>
+  <footer id="site-footer"></footer>
+  <script src="questions.js"></script>
+  <script src="js/core.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/mode-study.js"></script>
+  <script src="js/mode-cloze.js"></script>
+  <script src="js/mode-list.js"></script>
+  <script>Layout.render("estudio.html", "Estudio", "Aprende las 100 preguntas: tarjetas, texto con huecos y consulta rápida."); App.page(["study","cloze","list"]);</script>
+</body>
+</html>

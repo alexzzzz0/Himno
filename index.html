@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Plataforma de estudio del Cuestionario Cívico del Himno Nacional de Honduras.">
+  <title>Estudia el Himno Nacional de Honduras</title>
+  <link rel="stylesheet" href="styles.css">
+  <script>try{var t=JSON.parse(localStorage.getItem("hn:theme"));if(!t&&matchMedia("(prefers-color-scheme: dark)").matches)t="dark";if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+  <header id="site-header"></header>
+  <section class="hero" style="min-height:260px"><div class="hero-content" style="padding-top:34px"><p class="eyebrow">HONDURAS · FORMACIÓN CÍVICA</p><h1>Aprende el Himno<br><span>Nacional de Honduras</span></h1><p class="hero-copy">Sigue la ruta: estudia, practica, entiende cada estrofa y comprueba lo aprendido.</p></div><div class="flag-mark" aria-hidden="true"><i></i><i></i><i></i><b>★ ★ ★ ★ ★</b></div></section>
+  <main class="container">
+    <section class="stats-grid">
+      <article class="stat-card"><span class="stat-icon">▤</span><div><strong id="total-count">100</strong><small>Preguntas</small></div></article>
+      <article class="stat-card"><span class="stat-icon">✓</span><div><strong id="learned-count">0</strong><small>Aprendidas</small></div></article>
+      <article class="stat-card"><span class="stat-icon">↻</span><div><strong id="missed-count">0</strong><small>Por reforzar</small></div></article>
+      <article class="stat-card"><span class="stat-icon">★</span><div><strong id="best-exam">—</strong><small>Mejor examen</small></div></article>
+      <span id="progress-percent" class="hidden"></span>
+    </section>
+    <section class="section-heading"><div><p class="eyebrow dark">RUTA SUGERIDA</p><h2>¿Por dónde empezar?</h2></div><p>Sigue el orden o salta a lo que necesites.</p></section>
+    <section class="mode-grid route">
+      <a class="mode-card" href="estudio.html"><span class="mode-icon">▣</span><h3>Estudio</h3><p>Tarjetas, texto con huecos (3 niveles) y el banco completo de preguntas.</p><span class="mode-link">Estudiar →</span></a>
+      <a class="mode-card" href="juegos.html"><span class="mode-icon">⚡</span><h3>Juegos</h3><p>Repaso rápido, une las parejas y verdadero o falso, con dificultad ajustable.</p><span class="mode-link">Jugar →</span></a>
+      <a class="mode-card" href="explicaciones.html"><span class="mode-icon">▤</span><h3>Explicaciones</h3><p>Lee la explicación de cada estrofa y haz la prueba sobre ellas.</p><span class="mode-link">Entender →</span></a>
+      <a class="mode-card" href="silabas.html"><span class="mode-icon">♪</span><h3>Silabeo</h3><p>Divide los versos en sílabas y aprende sinalefa, hiato, acento métrico y más.</p><span class="mode-link">Analizar →</span></a>
+      <a class="mode-card" href="examen.html"><span class="mode-icon">✎</span><h3>Examen</h3><p>Las 100 preguntas en opción múltiple. Elige dificultad: hasta con tiempo límite.</p><span class="mode-link">Examinarme →</span></a>
+    </section>
+    <section class="source-note"><strong>Nota sobre la fuente</strong><p>Las 100 preguntas y respuestas provienen del documento «Breves Preguntas y respuestas del Himno Nacional» y se conservan con su redacción original. Las opciones de opción múltiple son versiones resumidas de las respuestas; la respuesta completa siempre está disponible.</p></section>
+  </main>
+  <footer id="site-footer"></footer>
+  <script src="questions.js"></script>
+  <script src="js/core.js"></script>
+  <script src="js/layout.js"></script>
+  <script>Layout.render("index.html"); App.refreshStats();</script>
+</body>
+</html>
